@@ -1,16 +1,17 @@
+/* File: explore.html */
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="javascript/countdown.js"></script>
-  <title>Belize Hikers - Upcoming Hike</title>
+  <title>The Leafline - Upcoming Hike</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <header class="bg-green-700 text-white p-4">
-    <h1 class="text-2xl font-bold">The Leafline</h1>
+    <h1 class="text-2xl font-bold">Belize Hikers</h1>
     <nav class="mt-2">
+      <a href="index.html" class="mr-4 hover:underline">Home</a>
       <a href="explore.html" class="mr-4 hover:underline">Upcoming Hike</a>
       <a href="past-hikes.html" class="mr-4 hover:underline">Past Hikes</a>
       <a href="about.html" class="hover:underline">About</a>
@@ -19,8 +20,13 @@
 
   <main class="p-6 max-w-3xl mx-auto">
     <h2 class="text-xl font-semibold mb-2">Next Planned Hike</h2>
-    <p class="mb-4">Join us for a scenic hike to Tiger Fern Trail on May 12, 2025. Meet at the trailhead by 8:00 AM.</p>
+    <p class="mb-4">Join us for a scenic hike to Tiger Fern Trail on <strong>May 12, 2025</strong>. Meet at the trailhead by 8:00 AM.</p>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tiger_Fern_Waterfall.jpg/640px-Tiger_Fern_Waterfall.jpg" alt="Tiger Fern Trail" class="mb-4 rounded-lg shadow"/>
+
+    <div class="mb-6">
+      <h3 class="text-lg font-medium mb-2">Countdown to Hike</h3>
+      <div id="countdown" class="text-2xl font-bold text-green-700"></div>
+    </div>
 
     <h3 class="text-lg font-medium mb-2">RSVP</h3>
     <p class="mb-2">Let us know you're coming by filling out the form below:</p>
@@ -30,7 +36,9 @@
   </main>
 
   <footer class="bg-green-700 text-white text-center p-4 mt-8">
-    &copy; 2025 The Leafline
+    &copy; 2025 Belize Hikers
   </footer>
+
+  <script src="javascript/countdown.js"></script>
 </body>
 </html>
