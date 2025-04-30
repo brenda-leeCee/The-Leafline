@@ -13,3 +13,12 @@
     animation: fadeInZoom 0.8s ease-out forwards;
   }
   
+  body {
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
