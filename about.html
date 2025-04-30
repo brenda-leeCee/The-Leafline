@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Leafline - About</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+
 </head>
 <body class="bg-gray-100 text-gray-800">
   <header class="bg-green-700 text-white p-4">
@@ -17,7 +19,12 @@
     </nav>
   </header>
 
+
   <main class="p-6 max-w-3xl mx-auto">
+    <div id="groupPhotoWrapper" class="mb-8 opacity-0 transform scale-95 transition-all duration-700">
+      <img src="images/hike14.PNG" alt="Group Photo from Past Hike" class="rounded-lg w-full shadow-lg">
+      <p class="text-center text-sm text-gray-600 mt-2 italic">Our amazing crew after a rewarding hike!</p>
+    </div>    
     <h2 class="text-xl font-semibold mb-4">About Us</h2>
     <p class="mb-4">We are a group of nature lovers based in Belize who explore hiking trails across the country. From waterfalls to jungles, our goal is to connect people with nature and each other through hiking.</p>
 
@@ -28,5 +35,6 @@
   <footer class="bg-green-700 text-white text-center p-4 mt-8">
     &copy; 2025 The Leafline
   </footer>
+  <script src="javascript/about.js"></script>
 </body>
 </html>
