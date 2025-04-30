@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+<!-- Lightbox2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+
   <title>The Leafline - Upcoming Hike</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -26,11 +31,28 @@
       <div id="countdown" class="text-2xl font-bold text-green-700"></div>
     </div>
 
+    <h3 class="text-lg font-medium mb-2 mt-10">Explore Belize</h3>
+    <div id="map" class="w-full h-96 rounded shadow mb-10"></div>
+    
     <h3 class="text-lg font-medium mb-2">RSVP</h3>
     <p class="mb-2">Let us know you're coming by filling out the form below:</p>
     <div class="aspect-w-16 aspect-h-9">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfyourformid/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+
+    <h3 class="text-lg font-medium mb-2 mt-10">Gallery</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+  <a href="images/gallery1.jpg" data-lightbox="hike-gallery" data-title="Cockscomb Basin">
+    <img src="images/gallery1-thumb.jpg" alt="Cockscomb Basin" class="rounded shadow">
+  </a>
+  <a href="images/gallery2.jpg" data-lightbox="hike-gallery" data-title="Mountain Pine Ridge">
+    <img src="images/gallery2-thumb.jpg" alt="Mountain Pine Ridge" class="rounded shadow">
+  </a>
+  <a href="images/gallery3.jpg" data-lightbox="hike-gallery" data-title="Victoria Peak">
+    <img src="images/gallery3-thumb.jpg" alt="Victoria Peak" class="rounded shadow">
+  </a>
+</div>
+ 
   </main>
 
   <footer class="bg-green-700 text-white text-center p-4 mt-8">
@@ -38,5 +60,12 @@
   </footer>
 
   <script src="javascript/countdown.js"></script>
+  <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<!-- Custom Explore Functionality -->
+<script src="javascript/explore.js"></script>
+
 </body>
 </html>
